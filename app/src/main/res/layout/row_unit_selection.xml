@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowUnitSelectionContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="12dp"
+    app:elevation="2dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sessionCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="-2dp"
+            android:background="@drawable/shape_session_code_top_radius"
+            android:backgroundTint="@color/color_green"
+            android:gravity="center"
+            android:hint="@string/string_session_code"
+            android:inputType="number"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/color_waite"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            tools:ignore="RelativeOverlap,TextViewEdits"
+            tools:text="2301675" />
+
+
+        <ImageView
+            android:id="@+id/moreItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:contentDescription="@string/string_content_description"
+            android:src="@drawable/ic_baseline_more_horiz_24" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_tag_top_radius_by_stroke2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sessionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="12dp"
+            android:textDirection="rtl"
+            android:textColor="@color/color_green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TextViewEdits"
+            tools:text="ریاضیات مهندسی (3)" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_waite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|start"
+                    android:inputType="textPersonName"
+                    android:paddingStart="16dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="12dp"
+                    android:text="@string/string_teacher_name"
+                    android:textColor="@color/color_gray3"
+                    android:textDirection="rtl"
+                    android:textSize="12sp"
+                    tools:ignore="NestedWeights,TextViewEdits" />
+
+                <TextView
+                    android:id="@+id/teacherName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|start"
+                    android:hint="اقای عظیمی"
+                    android:inputType="text"
+                    android:paddingStart="16dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="12dp"
+                    android:textColor="@color/color_gray_darker"
+                    android:textDirection="rtl"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextViewEdits" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_waite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                android:inputType="textPersonName"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="4dp"
+                android:paddingBottom="12dp"
+                android:text="محل برگزاری کلاس"
+                android:textColor="@color/color_gray3"
+                android:textDirection="rtl"
+                android:textSize="12sp"
+                tools:ignore="NestedWeights,TextViewEdits" />
+
+            <TextView
+                android:id="@+id/classNumberORClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|start"
+                android:hint="فنی مهندسی  /  2304"
+                android:inputType="text"
+                android:paddingStart="16dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/color_gray_darker"
+                android:textDirection="rtl"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TextViewEdits" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_waite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical|start"
+                    android:inputType="textPersonName"
+                    android:paddingStart="16dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="12dp"
+                    android:text="ساعت شروع"
+                    android:textColor="@color/color_gray3"
+                    android:textDirection="rtl"
+                    android:textSize="12sp"
+                    tools:ignore="NestedWeights,TextViewEdits" />
+
+               <LinearLayout
+                   android:layout_weight="0.6"
+                   android:layout_width="0dp"
+                   android:layout_marginEnd="8dp"
+                   android:layoutDirection="ltr"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/sHour"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center_vertical|end"
+                       android:hint="30"
+                       android:paddingTop="12dp"
+                       android:singleLine="true"
+                       android:paddingBottom="12dp"
+                       android:textColor="@color/color_gray_darker"
+                       android:textDirection="ltr"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       tools:ignore="TextViewEdits" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:text=" : "
+                       android:layout_marginTop="4dp"
+                       android:gravity="center"
+                       android:textColor="@color/color_gray_darker"
+                       android:textStyle="bold"
+                       android:textSize="16sp" />
+
+                   <TextView
+                       android:id="@+id/sMinute"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:gravity="center_vertical|start"
+                       android:hint="12"
+                       android:paddingTop="12dp"
+                       android:paddingBottom="12dp"
+                       android:textColor="@color/color_gray_darker"
+                       android:textDirection="ltr"
+                       android:textSize="16sp"
+                       android:textStyle="bold"
+                       tools:ignore="TextViewEdits" />
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1.0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical|start"
+                    android:inputType="textPersonName"
+                    android:paddingStart="8dp"
+                    android:paddingTop="12dp"
+                    android:paddingEnd="4dp"
+                    android:paddingBottom="12dp"
+                    android:text="ساعت پایان"
+                    android:textColor="@color/color_gray3"
+                    android:textDirection="rtl"
+                    android:textSize="12sp"
+                    tools:ignore="NestedWeights,TextViewEdits" />
+
+
+                <LinearLayout
+                    android:layout_weight="0.6"
+                    android:layout_width="0dp"
+                    android:layoutDirection="ltr"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/eHour"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|end"
+                        android:hint="15"
+                        android:paddingTop="12dp"
+                        android:singleLine="true"
+                        android:paddingBottom="12dp"
+                        android:textColor="@color/color_gray_darker"
+                        android:textDirection="ltr"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextViewEdits" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=" : "
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/color_gray_darker"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/eMinute"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|start"
+                        android:hint="14"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp"
+                        android:textColor="@color/color_gray_darker"
+                        android:textDirection="ltr"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="TextViewEdits" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

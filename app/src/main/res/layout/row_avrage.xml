@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/color_waite2"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/shape_row_weekly"
+            android:backgroundTint="@color/color_waite"
+            android:elevation="2dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal"
+            tools:ignore="UnusedAttribute"
+            tools:targetApi="m">
+
+
+            <TextView
+                android:id="@+id/session_name_input"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:hint="@string/string_hint_session_name"
+                android:paddingStart="20dp"
+                android:paddingEnd="8dp"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/session_score"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.3"
+                android:alpha="0.9"
+                android:background="@drawable/shape_row_weekly"
+                android:backgroundTint="@color/color_gray"
+                android:gravity="center"
+                android:hint="@string/string_score"
+                android:maxLength="5"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/color_black"
+                android:textColorHint="#51000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="TextViewEdits" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sessionUnitInput"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/shape_circle"
+        android:backgroundTint="@color/colorAccent"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:hint="@string/string_hint_unit"
+        android:textColor="@color/color_waite"
+        android:textColorHint="@color/color_waite_by_alpha"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

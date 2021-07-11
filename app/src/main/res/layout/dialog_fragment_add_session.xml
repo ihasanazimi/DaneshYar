@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/color_waite2"
+    android:layoutDirection="rtl">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_gray_darker"
+        android:layout_marginTop="24dp"
+        android:justificationMode="inter_word"
+        android:text="نمره ای که حدس میزنید کسب می کنید و نام درس مورد نظرتان را وارد کنید"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:textSize="12sp"
+        tools:targetApi="o" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/shape_tag_top_radius"
+            android:backgroundTint="@color/color_waite"
+            android:elevation="2dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent"
+            tools:targetApi="lollipop">
+
+            <EditText
+                android:id="@+id/sessionNameInput"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@android:color/transparent"
+                android:gravity="center|start"
+                android:hint="@string/string_session_name"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:paddingEnd="8dp"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/color_black"
+                android:textColorHint="#4B000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_waite2" />
+
+
+            <EditText
+                android:id="@+id/sessionScoreInput"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/shape_tag"
+                android:gravity="center"
+                android:hint="@string/string_score"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingTop="4dp"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_gray_darker"
+        android:layout_marginTop="8dp"
+        android:text="تعداد واحدِ درس مذکور را انتخاب کنید"
+        android:paddingStart="32dp"
+        android:textSize="12sp" />
+
+
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/unitPicker"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        app:np_max="10"
+        app:np_min="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:descendantFocusability="blocksDescendants"
+        android:fadeScrollbars="true"
+        android:textAlignment="center"
+        app:np_accessibilityDescriptionEnabled="true"
+        app:np_divider="@color/colorAccent"
+        app:np_dividerColor="@color/colorAccent"
+        app:np_dividerDistance="80dp"
+        app:np_fadingEdgeEnabled="true"
+        app:np_orientation="horizontal"
+        app:np_scrollerEnabled="true"
+        app:np_selectedTextAlign="selectedTextAlignCenter"
+        app:np_selectedTextColor="@color/colorAccent"
+        app:np_selectedTextSize="16sp"
+        app:np_textAlign="textAlignCenter"
+        app:np_textSize="16sp" />
+
+    <TextView
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:enabled="false"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_tag"
+        android:backgroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/string_confirm"
+        android:textColor="@color/color_waite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_waite2"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_tag"
+        android:elevation="1dp"
+        android:gravity="center|start"
+        android:hint="@string/string_subject"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="12dp"
+        android:singleLine="true"
+        android:textColor="@color/color_gray_darker"
+        android:textColorHint="@color/color_gray_darker"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/desEvent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shape_tag"
+            android:elevation="1dp"
+            android:gravity="start|top"
+            android:hint="@string/string_des"
+            android:inputType="textMultiLine"
+            android:padding="14dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_gray_darker"
+            android:textColorHint="@color/color_gray_darker"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addEvent"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/shape_tag"
+        android:backgroundTint="@color/color_gray_darker"
+        android:gravity="center"
+        android:text="@string/string_confirm"
+        android:textColor="@color/color_waite"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconSize="14dp"
+        app:iconTint="@color/color_waite" />
+
+</LinearLayout>

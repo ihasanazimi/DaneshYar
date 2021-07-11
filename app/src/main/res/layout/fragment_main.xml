@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:chainUseRtl="true"
+    android:layoutDirection="rtl"
+    app:edMenuSize="260dp"
+    app:edMenuBackground="@color/color_waite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragmentItemToolsContainer"
+        android:background="@color/color_waite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.85">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/universityTitleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_waite"
+                android:gravity="end|center_vertical"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+                app:title="@string/app_name">
+
+
+                <ImageView
+                    android:id="@+id/navDrawer"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/string_content_description"
+                    android:rotation="180"
+                    android:src="@drawable/ic_baseline_menu_24" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/universityTitleTV"
+            android:paddingTop="34dp"
+            android:paddingBottom="12dp"
+            android:requiresFadingEdge="horizontal" />
+
+        <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+            android:id="@+id/dots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:selectedDotColor="@color/color_green"
+            app:dotColor="@color/color_gray"
+            app:supportRTL="true"
+            app:dotSeparation="3dp"
+            android:layout_below="@+id/universityTitleTV"
+            app:dotRadius="3dp"
+            android:layout_marginTop="12dp"
+            app:fadingDotCount="2"
+            app:selectedDotRadius="3dp"
+            app:dotCount="4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="48dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_weight="1.05"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-74dp"
+            android:gravity="top|center_vertical"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+
+            <RelativeLayout
+                android:id="@+id/averageItem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="-37dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_sheet"
+                android:backgroundTint="@color/colorAccent"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="UnusedAttribute"
+                tools:targetApi="m">
+
+
+                <ImageView
+                    android:id="@+id/imgViewAverage"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="24dp"
+                    android:contentDescription="@string/string_content_description"
+                    android:padding="12dp"
+                    android:src="@drawable/moadel" />
+
+
+                <TextView
+                    android:id="@+id/title_moadel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="24dp"
+                    android:singleLine="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/imgViewAverage"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="8dp"
+                    android:text="@string/string_takhmin_moadel"
+                    android:textColor="@color/color_waite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/desItem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_moadel"
+                    android:layout_marginEnd="32dp"
+                    android:layout_toEndOf="@id/imgViewAverage"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="4dp"
+                    android:maxLines="2"
+                    android:paddingEnd="8dp"
+                    android:text="@string/string_takhmin_moadel_description"
+                    android:textColor="@color/color_waite"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/desItem1"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.5"
+                    android:contentDescription="@string/string_content_description"
+                    android:src="@drawable/arrow" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/selectingUnitItem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-36dp"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_sheet"
+                android:backgroundTint="@color/color_green"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="UnusedAttribute"
+                tools:targetApi="m">
+
+
+                <ImageView
+                    android:id="@+id/imgViewSelectingUnit"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="24dp"
+                    android:contentDescription="@string/string_content_description"
+                    android:padding="12dp"
+                    android:src="@drawable/entekhab" />
+
+
+                <TextView
+                    android:id="@+id/title_entekhab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/imgViewSelectingUnit"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="8dp"
+                    android:singleLine="true"
+                    android:text="@string/string_unit_selecting"
+                    android:textColor="@color/color_waite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/desItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_entekhab"
+                    android:layout_marginEnd="32dp"
+                    android:layout_toEndOf="@id/imgViewSelectingUnit"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="4dp"
+                    android:maxLines="2"
+                    android:paddingEnd="8dp"
+                    android:text="@string/string_unit_selecting_description"
+                    android:textColor="@color/color_waite"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/desItem2"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0.5"
+                    android:contentDescription="@string/string_content_description"
+                    android:src="@drawable/arrow" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/eventsItem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="-30dp"
+                android:layout_weight="0.9"
+                android:background="@drawable/bottom_sheet"
+                android:backgroundTint="@color/color_gray_darker"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="UnusedAttribute">
+
+
+                <ImageView
+                    android:id="@+id/imgViewEvents"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/string_content_description"
+                    android:padding="12dp"
+                    android:src="@drawable/event" />
+
+
+                <TextView
+                    android:id="@+id/title_weekly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toEndOf="@id/imgViewEvents"
+                    android:gravity="center_vertical|start"
+                    android:singleLine="true"
+                    android:paddingStart="8dp"
+                    android:text="@string/string_events"
+                    android:textColor="@color/color_waite"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/desItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_weekly"
+                    android:layout_marginEnd="32dp"
+                    android:layout_toEndOf="@id/imgViewEvents"
+                    android:gravity="center_vertical|start"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="8dp"
+                    android:maxLines="2"
+                    android:text="@string/string_events_item_description"
+                    android:textColor="@color/color_waite"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignTop="@+id/desItem3"
+                    android:alpha="0.5"
+                    android:contentDescription="@string/string_content_description"
+                    android:src="@drawable/arrow" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menuLayout"
+        android:layoutDirection="ltr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowDayContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_marginEnd="6dp"
+    android:background="@drawable/shape_day_active"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:textDirection="rtl">
+
+    <View
+        android:id="@+id/activeOvalState"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_oval"
+        android:backgroundTint="@color/color_green" />
+
+    <TextView
+        android:id="@+id/dayTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center|start"
+        android:paddingStart="12dp"
+        android:paddingEnd="16sp"
+        android:singleLine="true"
+        android:textColor="@color/color_waite"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:text="چهار شنبه" />
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_waite2"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_tag"
+        android:elevation="1dp"
+        android:gravity="center|start"
+        android:hint="@string/string_subject"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="14dp"
+        android:singleLine="true"
+        android:textColor="@color/color_gray_darker"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        tools:ignore="Autofill" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/color_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layoutDirection="rtl"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/desEvent"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/shape_tag"
+            android:elevation="1dp"
+            android:gravity="start|top"
+            android:hint="@string/string_des"
+            android:inputType="textMultiLine"
+            android:padding="8dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/color_gray_darker"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addEvent"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/shape_tag"
+            android:backgroundTint="@color/color_gray_darker"
+            android:gravity="center"
+            android:text="@string/string_edit"
+            android:textColor="@color/color_waite"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deleteEvent"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:text="@string/string_delete_description"
+            android:textColor="@color/color_gray_darker"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

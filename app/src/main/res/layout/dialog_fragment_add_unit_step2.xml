@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_waite2"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center|start"
+            android:text="@string/string_step2_helping"
+            android:textColor="@color/color_gray3"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_tag_top_radius"
+            android:backgroundTint="@color/color_waite">
+
+
+            <EditText
+                android:id="@+id/session_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|start"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="0.7"
+                android:background="@android:color/transparent"
+                android:gravity="center|start"
+                android:hint="@string/string_session_name"
+                android:inputType="text"
+                android:paddingStart="24dp"
+                android:paddingEnd="8dp"
+                android:singleLine="true"
+                android:textColor="@color/color_text_bold"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_waite2" />
+
+
+            <EditText
+                android:id="@+id/session_code"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|start"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/string_session_code"
+                android:inputType="number"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="@color/color_text_bold"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center|start"
+            android:text="@string/string_dialog_step2_helping"
+            android:textColor="@color/color_gray3"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/sessionUnitPicker"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:descendantFocusability="blocksDescendants"
+            android:fadeScrollbars="true"
+            android:textAlignment="center"
+            app:np_accessibilityDescriptionEnabled="true"
+            app:np_divider="@color/color_green"
+            app:np_dividerColor="@color/color_green"
+            app:np_dividerDistance="58dp"
+            app:np_fadingEdgeEnabled="true"
+            app:np_max="10"
+            app:np_min="1"
+            app:np_orientation="horizontal"
+            app:np_scrollerEnabled="true"
+            app:np_selectedTextAlign="selectedTextAlignCenter"
+            app:np_selectedTextColor="@color/color_green"
+            app:np_selectedTextSize="18dp"
+            app:np_textAlign="textAlignCenter"
+            app:np_textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shape_tag"
+        android:backgroundTint="@color/color_green"
+        android:gravity="center"
+        android:text="@string/string_continue"
+        android:textColor="@color/color_waite"
+        android:textSize="16sp" />
+
+</LinearLayout>

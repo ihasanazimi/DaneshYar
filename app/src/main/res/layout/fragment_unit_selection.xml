@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/unitSelectionContainerFragment"
+    android:layoutDirection="rtl">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_green"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/color_green"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|snap">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+
+                    <TextView
+                        android:id="@+id/header"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_toStartOf="@id/morePopUpMenu"
+                        android:gravity="center|start"
+                        android:text="@string/string_unit_selection_header_title"
+                        android:textColor="@color/color_waite"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/morePopUpMenu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:contentDescription="@string/string_content_description"
+                        android:src="@drawable/ic_more" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dayRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar"
+            android:nestedScrollingEnabled="false"
+            android:requiresFadingEdge="vertical"
+            android:scrollbarStyle="insideInset"
+            android:paddingStart="8dp"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="left"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_waite2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/unitRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar"
+            android:nestedScrollingEnabled="false"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:requiresFadingEdge="vertical"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="left"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addUnitFloatActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/string_content_description"
+        android:src="@drawable/ic_baseline_add_24"
+        app:borderWidth="0dp"
+        app:elevation="4dp"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:backgroundTint="@color/color_green"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom|start"
+        app:fabCustomSize="52dp" />
+
+    <ImageView
+        android:id="@+id/emptyState"
+        android:layout_width="150dp"
+        android:paddingTop="16dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:alpha="0.08"
+        android:contentDescription="@string/string_content_description"
+        android:src="@drawable/ic_empty" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
