@@ -1,4 +1,4 @@
-package ir.formol.utils.adapters
+package ir.ha.daneshyar.utils.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.DayModel
+import ir.ha.daneshyar.models.DayModel
 import java.util.*
 
 class DayAdapter2(var list: ArrayList<DayModel>, var callback : OnItemClickListener) : RecyclerView.Adapter<DayAdapter2.VH>() {
@@ -62,7 +62,7 @@ class DayAdapter2(var list: ArrayList<DayModel>, var callback : OnItemClickListe
 
 
 
-    fun selectedItem(dayModel: DayModel , position: Int){
+    fun selectedItem(dayModel: DayModel, position: Int){
 
         if (oldSelectedItem != -1) {
             for (item in 0 until list.size) {
@@ -108,7 +108,7 @@ class DayAdapter2(var list: ArrayList<DayModel>, var callback : OnItemClickListe
     }
 
     interface OnItemClickListener{
-        fun onItemClick( dayModel: DayModel , position: Int)
+        fun onItemClick(dayModel: DayModel, position: Int)
     }
 
 }

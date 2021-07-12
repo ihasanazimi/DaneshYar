@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import ir.formol.R
 import ir.formol.databinding.ActivityMainBinding
-import ir.formol.ui.fragments.MainFragment
+import ir.ha.daneshyar.ui.fragments.MainFragment
 
 class MainActivity : AppCompatActivity(){
 

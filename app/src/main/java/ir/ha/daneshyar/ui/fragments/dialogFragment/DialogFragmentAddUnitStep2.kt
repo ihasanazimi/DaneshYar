@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -9,10 +9,10 @@ import android.widget.EditText
 import androidx.fragment.app.DialogFragment
 import com.shawnlin.numberpicker.NumberPicker
 import ir.formol.R
-import ir.formol.models.DayModel
-import ir.formol.models.UnitModel
+import ir.ha.daneshyar.models.DayModel
+import ir.ha.daneshyar.models.UnitModel
 
-class DialogFragmentAddUnitStep2(val selectedDay : DayModel ,private val callBack: UnitStep2) : DialogFragment(){
+class DialogFragmentAddUnitStep2(val selectedDay : DayModel, private val callBack: UnitStep2) : DialogFragment(){
 
     lateinit var continueBtn: View
     lateinit var selectedUnit : NumberPicker
@@ -55,7 +55,7 @@ class DialogFragmentAddUnitStep2(val selectedDay : DayModel ,private val callBac
     }
 
     interface UnitStep2 {
-        fun step2Inputs(selectedDay : DayModel , step2UnitModel: UnitModel)
+        fun step2Inputs(selectedDay : DayModel, step2UnitModel: UnitModel)
     }
 
 }

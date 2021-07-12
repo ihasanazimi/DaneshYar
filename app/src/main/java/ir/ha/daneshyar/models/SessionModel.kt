@@ -1,4 +1,4 @@
-package ir.formol.models
+package ir.ha.daneshyar.models
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.Dialog
 import android.os.Bundle
@@ -8,9 +8,9 @@ import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import ir.formol.R
-import ir.formol.models.EventModel
+import ir.ha.daneshyar.models.EventModel
 
-class EditEventDialogFragment(private val eventClickListener: EventListener, var updateEventModel: EventModel ) : DialogFragment(),
+class EditEventDialogFragment(private val eventClickListener: EventListener, var updateEventModel: EventModel) : DialogFragment(),
     View.OnClickListener {
 
     private lateinit var subjectInput: EditText

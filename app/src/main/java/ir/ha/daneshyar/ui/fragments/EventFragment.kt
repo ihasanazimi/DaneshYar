@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments
+package ir.ha.daneshyar.ui.fragments
 
 import android.os.Bundle
 import android.os.Handler
@@ -12,13 +12,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
 import ir.formol.R
-import ir.formol.models.EventModel
-import ir.formol.roomDB.RoomDB
-import ir.formol.ui.EmptyState
-import ir.formol.ui.fragments.dialogFragment.AddEventDialogFragment
-import ir.formol.ui.fragments.dialogFragment.EditEventDialogFragment
-import ir.formol.utils.adapters.EventsAdapter
-import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
+import ir.ha.daneshyar.models.EventModel
+import ir.ha.daneshyar.roomDB.RoomDB
+import ir.ha.daneshyar.ui.EmptyState
+import ir.ha.daneshyar.ui.fragments.dialogFragment.AddEventDialogFragment
+import ir.ha.daneshyar.ui.fragments.dialogFragment.EditEventDialogFragment
+import ir.ha.daneshyar.utils.adapters.EventsAdapter
 import java.util.ArrayList
 
 class EventFragment : Fragment() , EmptyState, View.OnClickListener,
@@ -136,7 +135,7 @@ class EventFragment : Fragment() , EmptyState, View.OnClickListener,
         }
     }
 
-    override fun onItemOnClickListener(eventModel: EventModel , position : Int) {
+    override fun onItemOnClickListener(eventModel: EventModel, position : Int) {
         val dialog = EditEventDialogFragment(object : EditEventDialogFragment.EventListener{
 
             override fun onDeleteEventListener(eventModel: EventModel) {

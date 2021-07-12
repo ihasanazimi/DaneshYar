@@ -34,6 +34,12 @@ android {
         viewBinding true
         dataBinding true
     }
+
+    lintOptions {
+        checkReleaseBuilds false
+        //If you want to continue even if errors found use following line
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -71,12 +77,12 @@ dependencies {
 
     // Pager-Indicator
     implementation 'com.github.rbro112:Android-Indefinite-Pager-Indicator:1.4'
-    implementation 'com.github.wching:Android-Indefinite-Pager-Indicator:1.4'
+
 
 
 
     // PDF Viewer
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
     implementation 'com.github.afreakyelf:Pdf-Viewer:1.0.7'
 
     // OverScroll

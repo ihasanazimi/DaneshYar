@@ -1,8 +1,7 @@
-package ir.formol.roomDB
+package ir.ha.daneshyar.roomDB
 
 import androidx.room.*
-import ir.formol.models.SessionModel
-import ir.formol.models.UnitModel
+import ir.ha.daneshyar.models.UnitModel
 
 @Dao
 interface DaoUnitSelection {

@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -13,7 +13,7 @@ import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.shawnlin.numberpicker.NumberPicker
 import ir.formol.R
-import ir.formol.models.SessionModel
+import ir.ha.daneshyar.models.SessionModel
 import java.io.IOException
 
 class AddSessionDialogFragment(var callBack : OnAddSessionResult) : DialogFragment() {

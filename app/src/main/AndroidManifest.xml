@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".ui.activities.Splash"
+        <activity android:name="ir.ha.daneshyar.ui.activities.Splash"
             android:screenOrientation="locked">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

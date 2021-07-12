@@ -1,21 +1,17 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.GridLayout
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.DayModel
-import ir.formol.roomDB.RoomDB
-import ir.formol.utils.adapters.DayAdapter
-import ir.formol.utils.adapters.DayAdapter2
+import ir.ha.daneshyar.models.DayModel
+import ir.ha.daneshyar.utils.adapters.DayAdapter2
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 import java.util.ArrayList
 

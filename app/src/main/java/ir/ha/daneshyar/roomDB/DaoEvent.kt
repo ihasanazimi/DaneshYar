@@ -1,7 +1,7 @@
-package ir.formol.roomDB
+package ir.ha.daneshyar.roomDB
 
 import androidx.room.*
-import ir.formol.models.EventModel
+import ir.ha.daneshyar.models.EventModel
 
 @Dao
 interface DaoEvent {

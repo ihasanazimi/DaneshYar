@@ -1,4 +1,4 @@
-package ir.formol.utils.adapters
+package ir.ha.daneshyar.utils.adapters
 
 import android.os.Handler
 import android.os.Looper
@@ -9,7 +9,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.EventModel
+import ir.ha.daneshyar.models.EventModel
 import java.util.*
 
 class EventsAdapter(

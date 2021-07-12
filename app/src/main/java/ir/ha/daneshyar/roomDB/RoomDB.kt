@@ -1,14 +1,16 @@
-package ir.formol.roomDB
+package ir.ha.daneshyar.roomDB
 
 import android.content.Context
 import androidx.room.*
-import ir.formol.models.DayModel
-import ir.formol.models.SessionModel
-import ir.formol.models.EventModel
-import ir.formol.models.UnitModel
+import ir.ha.daneshyar.models.DayModel
+import ir.ha.daneshyar.models.SessionModel
+import ir.ha.daneshyar.models.EventModel
+import ir.ha.daneshyar.models.UnitModel
 
 @Database(
-    entities = [EventModel::class , SessionModel::class , UnitModel::class , DayModel::class ], version = 5, exportSchema = false
+    entities = [EventModel::class, SessionModel::class, UnitModel::class, DayModel::class],
+    version = 6,
+    exportSchema = false
 )
 abstract class RoomDB : RoomDatabase() {
 

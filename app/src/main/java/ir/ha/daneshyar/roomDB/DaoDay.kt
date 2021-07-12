@@ -1,8 +1,7 @@
-package ir.formol.roomDB
+package ir.ha.daneshyar.roomDB
 
 import androidx.room.*
-import ir.formol.models.DayModel
-import ir.formol.models.EventModel
+import ir.ha.daneshyar.models.DayModel
 
 @Dao
 interface DaoDay {

@@ -1,4 +1,4 @@
-package ir.formol.utils.adapters
+package ir.ha.daneshyar.utils.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.PDFModel
+import ir.ha.daneshyar.models.PDFModel
 
-class HomeRecyclerViewAdapter(var list: ArrayList<PDFModel> , var callBack : OnPdfClickListener) :
+class HomeRecyclerViewAdapter(var list: ArrayList<PDFModel>, var callBack : OnPdfClickListener) :
     RecyclerView.Adapter<HomeRecyclerViewAdapter.VH>() {
 
 
@@ -50,6 +50,6 @@ class HomeRecyclerViewAdapter(var list: ArrayList<PDFModel> , var callBack : OnP
 
 
     interface OnPdfClickListener {
-        fun onPdfClick( pdfModel : PDFModel )
+        fun onPdfClick( pdfModel : PDFModel)
     }
 }

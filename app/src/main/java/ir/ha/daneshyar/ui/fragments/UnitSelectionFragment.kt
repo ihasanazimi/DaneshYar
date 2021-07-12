@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments
+package ir.ha.daneshyar.ui.fragments
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -14,17 +14,16 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.snackbar.Snackbar
 import ir.formol.R
-import ir.formol.models.DayModel
-import ir.formol.models.UnitModel
-import ir.formol.roomDB.RoomDB
-import ir.formol.ui.EmptyState
-import ir.formol.ui.fragments.dialogFragment.DialogFragmentAddUnitStep1
-import ir.formol.ui.fragments.dialogFragment.DialogFragmentAddUnitStep2
-import ir.formol.ui.fragments.dialogFragment.DialogFragmentAddUnitStep3
-import ir.formol.ui.fragments.dialogFragment.DialogFragmentUpdateUnit
-import ir.formol.utils.adapters.DayAdapter
-import ir.formol.utils.adapters.ShowUnitsAdapter
-import kotlinx.android.synthetic.main.fragment_main.*
+import ir.ha.daneshyar.models.DayModel
+import ir.ha.daneshyar.models.UnitModel
+import ir.ha.daneshyar.roomDB.RoomDB
+import ir.ha.daneshyar.ui.EmptyState
+import ir.ha.daneshyar.ui.fragments.dialogFragment.DialogFragmentAddUnitStep1
+import ir.ha.daneshyar.ui.fragments.dialogFragment.DialogFragmentAddUnitStep2
+import ir.ha.daneshyar.ui.fragments.dialogFragment.DialogFragmentAddUnitStep3
+import ir.ha.daneshyar.ui.fragments.dialogFragment.DialogFragmentUpdateUnit
+import ir.ha.daneshyar.utils.adapters.DayAdapter
+import ir.ha.daneshyar.utils.adapters.ShowUnitsAdapter
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 
 

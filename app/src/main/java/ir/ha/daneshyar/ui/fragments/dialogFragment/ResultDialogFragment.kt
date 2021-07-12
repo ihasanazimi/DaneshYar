@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.AlertDialog
 import android.app.Dialog

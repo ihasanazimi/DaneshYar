@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments
+package ir.ha.daneshyar.ui.fragments
 
 import android.graphics.Paint
 import android.os.Bundle
@@ -12,13 +12,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.snackbar.Snackbar
 import ir.formol.R
-import ir.formol.models.SessionModel
-import ir.formol.roomDB.RoomDB
-import ir.formol.ui.EmptyState
-import ir.formol.ui.fragments.dialogFragment.AddSessionDialogFragment
-import ir.formol.ui.fragments.dialogFragment.EditSessionDialogFragment
-import ir.formol.ui.fragments.dialogFragment.ResultDialogFragment
-import ir.formol.utils.adapters.AverageAdapter
+import ir.ha.daneshyar.models.SessionModel
+import ir.ha.daneshyar.roomDB.RoomDB
+import ir.ha.daneshyar.ui.EmptyState
+import ir.ha.daneshyar.ui.fragments.dialogFragment.AddSessionDialogFragment
+import ir.ha.daneshyar.ui.fragments.dialogFragment.EditSessionDialogFragment
+import ir.ha.daneshyar.ui.fragments.dialogFragment.ResultDialogFragment
+import ir.ha.daneshyar.utils.adapters.AverageAdapter
 import java.util.*
 
 class AverageFragment : Fragment(), View.OnClickListener , EmptyState,

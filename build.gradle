@@ -4,6 +4,8 @@ buildscript {
     ext.kotlin_version = "1.5.20"
     repositories {
         google()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
         mavenCentral()
     }
 
@@ -20,6 +22,8 @@ allprojects {
 
     repositories {
         google()
+        //noinspection JcenterRepositoryObsolete
+        jcenter()
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }

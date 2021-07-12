@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.Dialog
 import android.os.Bundle
@@ -8,8 +8,8 @@ import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import ir.formol.R
-import ir.formol.models.EventModel
-import ir.formol.utils.Utilities
+import ir.ha.daneshyar.models.EventModel
+import ir.ha.daneshyar.utils.Utilities
 import java.util.*
 
 class AddEventDialogFragment(private val confirmClickListener: ConfirmListener) : DialogFragment(),

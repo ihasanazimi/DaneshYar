@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments
+package ir.ha.daneshyar.ui.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,14 +11,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SnapHelper
+import com.mxn.soul.flowingdrawer_core.ElasticDrawer
+import com.mxn.soul.flowingdrawer_core.FlowingDrawer
 import com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
 import ir.formol.R
-import ir.formol.models.PDFModel
+import ir.ha.daneshyar.models.PDFModel
 import ir.formol.ui.activities.ShowPdfActivity
 import ir.formol.ui.activities.ShowTools
-import ir.formol.utils.PrefManager
-import ir.formol.utils.adapters.HomeRecyclerViewAdapter
-import kotlinx.android.synthetic.main.fragment_main.*
+import ir.ha.daneshyar.utils.PrefManager
+import ir.ha.daneshyar.utils.adapters.HomeRecyclerViewAdapter
 
 
 class MainFragment : Fragment(), View.OnClickListener,
@@ -52,6 +53,7 @@ class MainFragment : Fragment(), View.OnClickListener,
 
     //CLASS`s
     private lateinit var prefManager: PrefManager
+    private lateinit var flowingDrawer: FlowingDrawer
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -91,19 +93,20 @@ class MainFragment : Fragment(), View.OnClickListener,
 
 
 
-//        flowingDrawer = view.findViewById(R.id.drawer)
-//        flowingDrawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL)
-//        flowingDrawer.setOnDrawerStateChangeListener(object : OnDrawerStateChangeListener {
-//            override fun onDrawerStateChange(oldState: Int, newState: Int) {
-//                if (newState == ElasticDrawer.STATE_CLOSED) {
-//                    Log.i("MainActivity", "Drawer STATE_CLOSED")
-//                }
-//            }
-//
-//            override fun onDrawerSlide(openRatio: Float, offsetPixels: Int) {
-//                Log.i("MainActivity", "openRatio=$openRatio ,offsetPixels=$offsetPixels")
-//            }
-//        })
+        flowingDrawer = view.findViewById(R.id.drawer)
+        flowingDrawer.setTouchMode(ElasticDrawer.TOUCH_MODE_BEZEL)
+        flowingDrawer.setOnDrawerStateChangeListener(object :
+            ElasticDrawer.OnDrawerStateChangeListener {
+            override fun onDrawerStateChange(oldState: Int, newState: Int) {
+                if (newState == ElasticDrawer.STATE_CLOSED) {
+                    Log.i("MainActivity", "Drawer STATE_CLOSED")
+                }
+            }
+
+            override fun onDrawerSlide(openRatio: Float, offsetPixels: Int) {
+                Log.i("MainActivity", "openRatio=$openRatio ,offsetPixels=$offsetPixels")
+            }
+        })
 
         val aboutUsFragment = AboutUsFragment()
         requireActivity().supportFragmentManager.beginTransaction().replace(R.id.id_container_menu,aboutUsFragment,null).commit()
@@ -136,23 +139,23 @@ class MainFragment : Fragment(), View.OnClickListener,
 
         when (v!!.id) {
 
-            averageItem.id -> {
+            avgItem.id -> {
                 intent.putExtra(TAG, AVERAGE_ITEM)
                 requireContext().startActivity(intent)
             }
 
-            selectingUnitItem.id -> {
+            selectingItem.id -> {
                 intent.putExtra(TAG, SELECTING_ITEM)
                 requireContext().startActivity(intent)
             }
 
-            eventsItem.id -> {
+            eventItem.id -> {
                 intent.putExtra(TAG, EVENTS_ITEM)
                 requireContext().startActivity(intent)
             }
 
             R.id.navDrawer -> {
-
+                flowingDrawer.openMenu()
             }
 
             else -> {

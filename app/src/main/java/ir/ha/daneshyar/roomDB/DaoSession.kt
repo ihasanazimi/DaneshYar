@@ -1,7 +1,7 @@
-package ir.formol.roomDB
+package ir.ha.daneshyar.roomDB
 
 import androidx.room.*
-import ir.formol.models.SessionModel
+import ir.ha.daneshyar.models.SessionModel
 
 @Dao
 interface DaoSession {

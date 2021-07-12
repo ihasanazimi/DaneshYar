@@ -1,4 +1,4 @@
-package ir.formol.utils;
+package ir.ha.daneshyar.utils;
 
 import android.content.pm.PackageManager;
 

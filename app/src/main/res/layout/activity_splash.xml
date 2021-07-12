@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/color_waite"
     android:textDirection="rtl"
-    tools:context=".ui.activities.Splash">
+    tools:context="ir.ha.daneshyar.ui.activities.Splash">
 
     <ImageView
         android:id="@+id/icon"

@@ -1,4 +1,4 @@
-package ir.formol.utils.adapters
+package ir.ha.daneshyar.utils.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,9 +7,9 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.SessionModel
+import ir.ha.daneshyar.models.SessionModel
 
-class AverageAdapter(var list: ArrayList<SessionModel>,var callback : OnItemClickListener) : RecyclerView.Adapter<AverageAdapter.VH>() {
+class AverageAdapter(var list: ArrayList<SessionModel>, var callback : OnItemClickListener) : RecyclerView.Adapter<AverageAdapter.VH>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.row_avrage, parent, false)
@@ -78,6 +78,6 @@ class AverageAdapter(var list: ArrayList<SessionModel>,var callback : OnItemClic
 
 
     interface OnItemClickListener{
-        fun onClickAdapterForUpdateModel(sessionModel: SessionModel , position: Int)
+        fun onClickAdapterForUpdateModel(sessionModel: SessionModel, position: Int)
     }
 }

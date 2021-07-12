@@ -1,4 +1,4 @@
-package ir.formol.ui.fragments.dialogFragment
+package ir.ha.daneshyar.ui.fragments.dialogFragment
 
 import android.app.AlertDialog
 import android.app.Dialog
@@ -6,16 +6,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.EditText
-import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import com.shawnlin.numberpicker.NumberPicker
 import ir.formol.R
-import ir.formol.models.DayModel
-import ir.formol.models.UnitModel
-import ir.formol.roomDB.RoomDB
-import java.util.ArrayList
+import ir.ha.daneshyar.models.DayModel
+import ir.ha.daneshyar.models.UnitModel
 
-class DialogFragmentAddUnitStep3(var selectedDay: DayModel ,var step2UnitModel : UnitModel ,private val callBack: UnitStep3) : DialogFragment(){
+class DialogFragmentAddUnitStep3(var selectedDay: DayModel, var step2UnitModel : UnitModel, private val callBack: UnitStep3) : DialogFragment(){
 
 
     private lateinit var continueBtn : View
@@ -75,7 +72,7 @@ class DialogFragmentAddUnitStep3(var selectedDay: DayModel ,var step2UnitModel :
 
 
     interface UnitStep3 {
-        fun unitStep3(selectedDay: DayModel , step2UnitModel : UnitModel , step3UnitModel : UnitModel )
+        fun unitStep3(selectedDay: DayModel, step2UnitModel : UnitModel, step3UnitModel : UnitModel)
     }
 
 }

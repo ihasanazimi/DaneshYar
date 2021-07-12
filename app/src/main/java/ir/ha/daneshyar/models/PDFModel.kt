@@ -1,8 +1,7 @@
-package ir.formol.models
+package ir.ha.daneshyar.models
 
 import android.os.Parcel
 import android.os.Parcelable
-import android.service.quicksettings.Tile
 
 class PDFModel() : Parcelable {
 

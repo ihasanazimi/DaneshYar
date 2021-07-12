@@ -1,7 +1,5 @@
-package ir.formol.utils.adapters
+package ir.ha.daneshyar.utils.adapters
 
-import android.os.Handler
-import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +7,9 @@ import android.widget.PopupMenu
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.UnitModel
+import ir.ha.daneshyar.models.UnitModel
 
-class ShowUnitsAdapter(var list: ArrayList<UnitModel> , var callBack : OnUnitEvents) : RecyclerView.Adapter<ShowUnitsAdapter.VH>() {
+class ShowUnitsAdapter(var list: ArrayList<UnitModel>, var callBack : OnUnitEvents) : RecyclerView.Adapter<ShowUnitsAdapter.VH>() {
 
     lateinit var mParent : ViewGroup
 

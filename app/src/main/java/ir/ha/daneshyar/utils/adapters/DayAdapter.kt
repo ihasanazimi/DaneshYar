@@ -1,8 +1,5 @@
-package ir.formol.utils.adapters
+package ir.ha.daneshyar.utils.adapters
 
-import android.os.Handler
-import android.os.Looper
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,11 +8,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ir.formol.R
-import ir.formol.models.DayModel
-import ir.formol.models.EventModel
+import ir.ha.daneshyar.models.DayModel
 import java.util.*
 
-class DayAdapter(var list: ArrayList<DayModel> , var callback : OnItemClickListener) : RecyclerView.Adapter<DayAdapter.VH>() {
+class DayAdapter(var list: ArrayList<DayModel>, var callback : OnItemClickListener) : RecyclerView.Adapter<DayAdapter.VH>() {
 
     lateinit var mParent: ViewParent
     var oldSelectedItem = -1
@@ -66,7 +62,7 @@ class DayAdapter(var list: ArrayList<DayModel> , var callback : OnItemClickListe
         return pos
     }
 
-    fun selectedItem(dayModel: DayModel , position: Int){
+    fun selectedItem(dayModel: DayModel, position: Int){
 
         if (oldSelectedItem != -1) {
             for (item in 0 until list.size) {
@@ -129,8 +125,8 @@ class DayAdapter(var list: ArrayList<DayModel> , var callback : OnItemClickListe
     }
 
     interface OnItemClickListener{
-        fun onItemClick( dayModel: DayModel , position: Int)
-        fun onDelete(  deleted : DayModel , position: Int )
+        fun onItemClick(dayModel: DayModel, position: Int)
+        fun onDelete(deleted : DayModel, position: Int )
     }
 
 }

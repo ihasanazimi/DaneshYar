@@ -1,4 +1,4 @@
-package ir.formol.ui.activities
+package ir.ha.daneshyar.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import ir.formol.BuildConfig
 import ir.formol.R
+import ir.formol.ui.activities.MainActivity
 
 class Splash : AppCompatActivity() {
 
